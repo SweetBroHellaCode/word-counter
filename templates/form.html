@@ -7,7 +7,7 @@
 
 {% block content %}
   <form method="POST" action="/">
-	 <! -- Need to add CSS class for the text form --> 
+	 <! -- Need to rename CSS class for the text form --> 
     <div>{{ form.text.label }}: {{ form.text(class="testClass") }}</div>
     {% if form.text.errors %}
         <ul class="errors">{% for error in form.text.errors %}<li>{{ error }}</li>{% endfor %}</ul>

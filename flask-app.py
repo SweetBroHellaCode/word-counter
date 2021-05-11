@@ -16,7 +16,7 @@ def text_form_word_count():
     if request.method == 'POST' and form.validate():
 		# Create a Dataframe to hold the split submitted text into a singular column
         df = pd.DataFrame(form.text.data.split())
-		# Return the size of the Dataframe to reveal the number of words submitted 
+		# Return the size of the Dataframe to determine the number of words submitted 
         return str(df.size)
 	# When receiving GET requests serve the word count form
     return render_template('form.html', form=form)
