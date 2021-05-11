@@ -1,0 +1,8 @@
+<form method="POST" action="/">
+	 <! -- Need to add CSS class for the text form --> 
+    <div>{{ form.text.label }}: {{ form.text(class="css_class") }}</div>
+    {% if form.text.errors %}
+        <ul class="errors">{% for error in form.text.errors %}<li>{{ error }}</li>{% endfor %}</ul>
+    {% endif %}
+	<input type="submit">
+</form>
