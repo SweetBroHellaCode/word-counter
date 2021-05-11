@@ -3,6 +3,7 @@ This application is meant to take in a volume of text through a web form and wil
 
 # Steps to Use
 The main path through this application is the flask-app.py file, where a minimal Flask application is configured to run.
+Use the python command on the flask-app.py file to run a small application at http://localhost:5000/.
 
 # Known Issues
 	* There is no persistence of data within the application
